@@ -1,0 +1,51 @@
+DOKUMENTASI FOLDER ADMIN
+
+Folder: /admin/
+
+1.  auth.php Fungsi:
+
+-   session_start()
+-   Mengecek apakah user sudah login sebagai admin
+-   Mencegah akses tanpa izin
+
+Digunakan di semua file admin.
+
+2.  index.php Fungsi:
+
+-   Menampilkan dashboard admin
+-   Menampilkan data user
+-   Menampilkan data todo
+-   Form tambah user dan todo
+
+File utama admin.
+
+3.  add_user.php Fungsi:
+
+-   Memproses tambah user baru
+-   Menyimpan ke database users
+
+Dipanggil dari form di index.php.
+
+4.  delete_user.php Fungsi:
+
+-   Menghapus data user
+-   Menghapus todo milik user
+
+Dipanggil dari link hapus.
+
+5.  add_todo.php Fungsi:
+
+-   Menambah tugas baru
+-   Menyimpan ke tabel todos
+
+6.  update_todo.php Fungsi:
+
+-   Mengubah status todo
+-   pending → in_progress → completed
+
+7.  delete_todo.php Fungsi:
+
+-   Menghapus data todo
+
+KESIMPULAN ADMIN: Folder admin digunakan untuk mengelola sistem secara
+penuh. Semua file wajib memakai auth.php.
